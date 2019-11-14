@@ -9,6 +9,8 @@ namespace CSC_Coding_Examples_Project
     
     class MulticastDelegates
     {
+        // this delegate declaration is the magic maker
+        // need this to create a delegate variable to use in the program main.
         delegate void D(int a, int b);
         /* static void Main(string[] args)
          {
