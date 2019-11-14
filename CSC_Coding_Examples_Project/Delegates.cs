@@ -11,7 +11,7 @@ namespace CSC_Coding_Examples_Project
         // create a delegate with the method signature int (int, int)
         delegate int D(int x, int y);
 
-        static void Main(string[] args)
+        /* static void Main(string[] args)
         {
             // now I have to instanciate my example class and assign a
             // delegate to the desired function
@@ -26,7 +26,7 @@ namespace CSC_Coding_Examples_Project
             D d3 = idm.Divide;
             Console.WriteLine(d3(24,12));
 
-        }
+        }*/
 
 
     }
