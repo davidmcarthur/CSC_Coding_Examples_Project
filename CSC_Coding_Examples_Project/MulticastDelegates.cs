@@ -10,23 +10,23 @@ namespace CSC_Coding_Examples_Project
     class MulticastDelegates
     {
         delegate void D(int a, int b);
-        static void Main(string[] args)
-        {
-            
-            Examples e = new Examples();
-            D d;
-            d = e.PrintAdd;
-            Console.WriteLine("Invoke delegate with one target: ");
-            d(6, 7);
-            Console.WriteLine("Unsubscribe from Add");
-            d -= e.PrintAdd;
-            Console.WriteLine("Invoke using += to create two additional targets");
-            d += e.PrintMultiply;
-            d(5, 5);
-            d += e.PrintSubtract;
-            d(10, 3);
-        }
+        /* static void Main(string[] args)
+         {
 
+             Examples e = new Examples();
+             D d;
+             d = e.PrintAdd;
+             Console.WriteLine("Invoke delegate with one target: ");
+             d(6, 7);
+             Console.WriteLine("Unsubscribe from Add");
+             d -= e.PrintAdd;
+             Console.WriteLine("Invoke using += to create two additional targets");
+             d += e.PrintMultiply;
+             d(5, 5);
+             d += e.PrintSubtract;
+             d(10, 3);
+         }
+         */
     }
 
     public class Examples
