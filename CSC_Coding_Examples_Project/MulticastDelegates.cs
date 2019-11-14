@@ -14,12 +14,18 @@ namespace CSC_Coding_Examples_Project
         delegate void D(int a, int b);
         /* static void Main(string[] args)
          {
-
+            // create an instance of the Examples class
              Examples e = new Examples();
+             // create a delegate variable d
              D d;
+             // the first use of d is on the example instance e to print the add
              d = e.PrintAdd;
              Console.WriteLine("Invoke delegate with one target: ");
+             // add 6+7
              d(6, 7);
+             // If you don't unsubscribe from Add it will call every time 
+             // any delegate is called. this is true for all proceeding 
+             // delegate subscriptions.
              Console.WriteLine("Unsubscribe from Add");
              d -= e.PrintAdd;
              Console.WriteLine("Invoke using += to create two additional targets");

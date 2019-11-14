@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Delegates.cs" />
     <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="InterfacesExample.cs" />
     <Compile Include="MulticastDelegates.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
