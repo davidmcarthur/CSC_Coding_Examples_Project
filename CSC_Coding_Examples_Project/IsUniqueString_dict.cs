@@ -13,13 +13,16 @@ namespace CSC_Coding_Examples_Project
     //
     class IsUniqueString_dict
     {
-        public static void Main(string[] args)
+       public static void Main(string[] args)
         {
             Console.WriteLine(isUniqueString("test"));
             Console.WriteLine(isUniqueString("add"));
             Console.WriteLine(isUniqueString("dave"));
-        }
 
+            Console.WriteLine(isUniqueStringImproved("Amanda"));
+            Console.WriteLine(isUniqueStringImproved("Charlote"));
+        }
+        
         public static bool isUniqueString(string str)
         {
             // since there are only 128 unique characters if the value of 
@@ -45,6 +48,28 @@ namespace CSC_Coding_Examples_Project
 
             // if we make it through the whole string
             return true;
+        }
+
+        public static bool isUniqueStringImproved(string str)
+        {
+            // I didn't know about hashsets until I watched Paul's new video on White Boarding
+            // I thougth I would try this as I've only worked with a couple of Generics types
+            HashSet<char> isUsed = new HashSet<char>();
+            for (int i = 0; i < str.Length; i++)
+            {
+
+                if (isUsed.Contains(str[i]))
+                {
+                    return false;
+                }
+                else
+                    isUsed.Add(str[i]);
+
+            }
+
+            // if we make it through the whole string
+            return true;
+
         }
     }
 }
