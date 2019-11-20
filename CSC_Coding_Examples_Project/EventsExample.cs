@@ -13,23 +13,23 @@ namespace CSC_Coding_Examples_Project
     /// </summary>
     class EventsExample
     {
-        public static void Main(string[] args)
-        {
-            // create an instance of the EventPublisher
-            EventPublisher pubisher = new EventPublisher();
+        //public static void Main(string[] args)
+        //{
+        //    // create an instance of the EventPublisher
+        //    EventPublisher pubisher = new EventPublisher();
 
-            // create an instance of the EventSubscriber
-            EventSubscriber subscriber = new EventSubscriber();
+        //    // create an instance of the EventSubscriber
+        //    EventSubscriber subscriber = new EventSubscriber();
 
-            // now we subscribe to the event
-            pubisher.evnt += subscriber.HandleEvent;
+        //    // now we subscribe to the event
+        //    pubisher.evnt += subscriber.HandleEvent;
 
-            // call SomeFunction to test our event
-            Console.WriteLine("11");
-            pubisher.SomeFunction(11);
-            Console.WriteLine("10");
-            pubisher.SomeFunction(10);
-        }
+        //    // call SomeFunction to test our event
+        //    Console.WriteLine("11");
+        //    pubisher.SomeFunction(11);
+        //    Console.WriteLine("10");
+        //    pubisher.SomeFunction(10);
+        //}
 
     }
     /// <summary>
