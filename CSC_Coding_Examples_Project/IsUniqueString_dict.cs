@@ -13,15 +13,15 @@ namespace CSC_Coding_Examples_Project
     //
     class IsUniqueString_dict
     {
-       public static void Main(string[] args)
-        {
-            Console.WriteLine(isUniqueString("test"));
-            Console.WriteLine(isUniqueString("add"));
-            Console.WriteLine(isUniqueString("dave"));
+       //public static void Main(string[] args)
+       // {
+       //     Console.WriteLine(isUniqueString("test"));
+       //     Console.WriteLine(isUniqueString("add"));
+       //     Console.WriteLine(isUniqueString("dave"));
 
-            Console.WriteLine(isUniqueStringImproved("Amanda"));
-            Console.WriteLine(isUniqueStringImproved("Charlote"));
-        }
+       //     Console.WriteLine(isUniqueStringImproved("Amanda"));
+       //     Console.WriteLine(isUniqueStringImproved("Charlote"));
+       // }
         
         public static bool isUniqueString(string str)
         {

@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Delegates.cs" />
+    <Compile Include="EventsExample.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="IEnumberableExample.cs" />
     <Compile Include="InterfacesExample.cs" />
