@@ -42,14 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncAwaitExample.cs" />
     <Compile Include="Delegates.cs" />
     <Compile Include="EventsExample.cs" />
     <Compile Include="ExtensionMethods.cs" />
-    <Compile Include="IEnumberableExample.cs" />
     <Compile Include="InterfacesExample.cs" />
     <Compile Include="MulticastDelegates.cs" />
     <Compile Include="IsUniqueString_dict.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SwapInPlace.cs" />
     <Compile Include="ThreadingExample.cs" />
   </ItemGroup>
   <ItemGroup>

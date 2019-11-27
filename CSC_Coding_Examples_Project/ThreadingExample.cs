@@ -9,15 +9,15 @@ namespace CSC_Coding_Examples_Project
 {
     class ThreadingExample
     {
-        public static void Main(string[] args)
-        {
-            // create two instances of Thread which each call a different function
-            Thread threadx = new Thread(WriteX);
-            Thread thready = new Thread(WriteY);
+        //public static void Main(string[] args)
+        //{
+        //    // create two instances of Thread which each call a different function
+        //    Thread threadx = new Thread(WriteX);
+        //    Thread thready = new Thread(WriteY);
 
-            threadx.Start();
-            thready.Start();
-        }
+        //    threadx.Start();
+        //    thready.Start();
+        //}
 
         // Threading method for writing Y
         private static void WriteY()
